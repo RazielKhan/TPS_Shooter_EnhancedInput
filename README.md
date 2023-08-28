@@ -8,11 +8,11 @@ Please see [TPS-K Enhanced Input Tracker](./EnhancedInputMigration/Docs/Enhanced
 
 >Please note that the UE5 Blueprint files are located here: [./EnhancedInputMigration/EnhancedInput/](./EnhancedInputMigration/EnhancedInput/) These can be migrated into your current project. For my setup, I put them in:
 >
->- `/Content/ThirdPersonKit/Blueprints/...`
->- `/Content/ThirdPersonKit/Blueprints/Actions/...`
->- `/Content/ThirdPersonKit/Blueprints/Configs/...`
->- `/Content/ThirdPersonKit/Blueprints/Mappings/...`
->- `/Content/ThirdPersonKit/Blueprints/MiscClasses/...`
->- `/Content/ThirdPersonKit/Blueprints/Settings/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/Actions/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/Configs/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/Mappings/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/MiscClasses/...`
+>- `/Content/ThirdPersonKit/Blueprints/EnhancedInput/Settings/...`
 
 *Additional note, some user input keys are not yet hooked up from the original project. I do not cover these in this migration document yet.*
