@@ -1,4 +1,5 @@
 # TPS_Shooter_EnhancedInput
+Update 08/28/2023: Fixed `InputAction` mapping for movement to fix bug that would keep the player in a run animation state when done moving.
 
 Enhanced Input migration documentation and inputs for Third Person Shooter Kit for UE5. https://www.unrealengine.com/marketplace/en-US/product/third-person-shooter-kit?
 
