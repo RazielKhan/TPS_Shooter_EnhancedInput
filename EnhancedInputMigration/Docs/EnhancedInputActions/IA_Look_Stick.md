@@ -1,3 +1,7 @@
+# `IA_Look_Mouse`
+
+## Add Player EnhancedInputAction for `IA_Look_Mouse`
+
 #### Gamepad Look Movement
 
 >`BP_PlayerCharacterBase` -> `Event Graph` -> `Aiming Input` -> `Look up/down -mouse`
