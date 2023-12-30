@@ -8,6 +8,6 @@
 >
 >Replace the following `Input Mappings`:
 >
->`InputAction Jumping` -> `EnhancedInputAction IA_Jumping`
+>`InputAction Jump` -> `EnhancedInputAction IA_Jumping`
 >
 >![image](./../../Images/EnhancedInput_JumpingInput_01.png)

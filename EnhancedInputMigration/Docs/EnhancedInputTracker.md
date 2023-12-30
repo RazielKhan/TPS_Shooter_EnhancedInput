@@ -202,6 +202,7 @@ Since we are now going to hold a list of assigned action keys, we need to be abl
 - [IA_Weapon_Next](./EnhancedInputActions/IA_Weapon_Next.md)
 - [IA_Weapon_Previous](./EnhancedInputActions/IA_Weapon_Previous.md)
 - [IA_Weapon_Reload](./EnhancedInputActions/IA_Weapon_Reload.md)
+- [BP_Button_Panel_EnhancedInput](./EnhancedInputActions/BP_Button_Panel_EnhancedInput.md)
 
 ## Clean up Construction Script
 
