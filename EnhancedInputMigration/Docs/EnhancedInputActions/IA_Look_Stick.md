@@ -37,5 +37,5 @@ Next, we must search all and replace legacy `InputAction` references with the ne
 >| Remove Legacy `InputAction` | Replace with `EnhancedAction` | Return Variable Out |
 >| --- | --- | --- |
 >| `Get Turn Right/Left` | `Get IA_Look_Stick` | `X` |
->| `Get LookUpGamepad` | `Get IA_Look_Mouse` | `Y` |
->| `Get LookUp` | `Get IA_Look_Mouse` | `Y` |
+>| `Get LookUpGamepad` | `Get IA_Look_Stick` | `Y` |
+>| `Get LookUp` | `Get IA_Look_Stick` | `Y` |

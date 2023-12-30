@@ -14,9 +14,9 @@ This is the Purple commented area of the `BP_ButtonPanel` Event Graph. Go to "Re
 
 Next, we will update the `QTE Logic - Key Hit` function. Double click this function call to enter the function.
 
-> We no longer need to track the `Current Key` in the caller and no longer need `Input Key` as the function input.
+> We no longer need to track the `Current Key` in the caller and no longer need `Input Key` as the function input since we can simply query if the user is holding these keys down.
 >
-> Additionally, instead of comparing the `QTE` keys against the `InputAction` key, we will now check the expected `QTE` key(s) with `IsInputKeyDown`. The `Target` will be the value from `Get Player Controller` at index `[0]`.
+> Instead of comparing the `QTE` keys against the `InputAction` key, we will now check the expected `QTE` key(s) with `IsInputKeyDown`. The `Target` will be the value from `Get Player Controller` at index `[0]`.
 >
 >![image](./../../Images/EnhancedInput_BP_Button_02.png)
 >
@@ -46,4 +46,6 @@ Next, we will update the `QTE Logic - Press Repeatedly` function. Double click t
 Next, we need to remove and add again the `QTE Logic - Press Repeatedly` function call.
 
 >We have to remove the original call to `QTE Logic - Press Repeatedly` because it'll still have the expected `InputKey` input reference which we have removed. Deleting it and reconnecting the same `QTE Logic - Press Repeatedly` function will show the input reference is now gone.
->![image](./../../Images/EnhancedInput_BP_Button_03.png)
+>![image](./../../Images/EnhancedInput_BP_Button_06.png)
+
+Now we can delete teh `Current Key` Variable from `BP_Button_Panel`.

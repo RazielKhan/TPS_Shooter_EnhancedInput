@@ -160,12 +160,15 @@ Since we are now going to hold a list of assigned action keys, we need to be abl
 >We need to modify the following 3 functions:
 
 >1. `IsHoldingAimingKey`
+>
 >![image](./../Images/EnhancedInput_IsHoldingAimingKey_01.png)
 >
 >2. `IsHoldingShotKey`
+>
 >![image](./../Images/EnhancedInput_IsHoldingShotKey_01.png)
 >
 >3. `IsHoldingCrouchKey`
+>
 >![image](./../Images/EnhancedInput_IsHoldingCrouchKey_01.png)
 
 ## Input Actions:
@@ -220,3 +223,23 @@ Next, we can cleanup the associated variables:
 > | `CrouchingInputKeyGamepad` | `Key` |>
 >
 >
+
+Lastly, we no longer need the `Legacy Input` bindings. To remove these, open the project settings: `Edit` -> `Project Settings`.
+
+![image](./../Images/EnhancedInput_ProjectSettings.png)
+
+Scroll down to `Engine` -> `Input`.
+
+![image](./../Images/EnhancedInput_Input_Settings.png)
+
+## Clean up `DefaultGame.ini`
+
+With the migration to `EnhancedInput`, UE may now start flagging an issue that looks like this:
+
+```
+EditorErrors: Warning: Click to open file Found a deprecated ini key name in ../../../../../../Users/nicho/UnrealEngine/Projects/TPSK_EnhancedInput_Test/Config/DefaultGame.ini. Search for [IniKeyBlacklist] and replace with [IniKeyDenylist]
+LogConfig: Warning: Found a deprecated ini key name in ../../../../../../Users/nicho/UnrealEngine/Projects/TPSK_EnhancedInput_Test/Config/DefaultGame.ini. Search for [IniKeyBlacklist] and replace with [IniKeyDenylist]
+```
+
+To resolve this, go into the the `DefaultGame.ini` file and find/replace instances of IniKeyBlacklist, replacing for IniKeyDenylist.
+
